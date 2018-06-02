@@ -1,0 +1,117 @@
+<ion-view class="beaconreader-view">
+        <ion-nav-title>
+            <span> Beacons </span>
+            <button class="right button button-icon icon ion-plus" ng-click="create(settings)"></button>
+        </ion-nav-title>
+        
+      
+    <ion-content>
+        <div class="row">
+            <div clas="col">
+                Please turn on the bluetooth if it is disabled, otherwise it doesn't work!
+            </div>
+        </div>
+     
+        </div>
+        <div class="row">
+            <div class="col">
+                <ion-input class="item item-input">
+                    <input type="number" min = "0" name="X_value" ng-model="settings.X_value" placeholder="X" required>
+                </ion-input>
+            </div>
+            <div class="col">
+                <ion-input class="item item-input">
+                    <input type="number" min = "0" name="Y_value" ng-model="settings.Y_value" placeholder="Y" required>
+                </ion-input>
+            </div>
+            <div class="col">
+                <ion-input class="item item-input">
+                    <input type="text" value=" " pattern = "(N|N,S|N,E|N,W|N,S,E|N,S,W|N,E,W|S|S,E|S,W|S,E,W|E|E,W|W| )"  
+                        name="borders" ng-model="settings.borders" placeholder="Borders">
+                </ion-input>
+            </div>
+            <div class="col">
+                <ion-input class="item item-input">
+                    <input type="number" min = "0" name="time" ng-model="settings.time" placeholder="time" required>
+                </ion-input>
+            </div>
+        </div>
+
+      
+
+        <div class="row">
+            <div class="col">
+                <a class="button button-dark button-block button-outline" ng-click="startScan()">
+                    <i class = "icon icon ion-play item-icon-center" >   </i>         
+                </a>
+            </div>
+            <div class="col">
+                <a class="button button-dark button-block button-outline" ng-click="stopScan()">
+                    <i class = "icon icon ion-stop" >   </i>         
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div clas="col">
+                {{dir}}       
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                {{cardinal}} 
+            </div>
+            <div class="col">
+                lastId: {{lastId}}
+            </div>
+        </div>
+
+        <div class="row">
+            <div clas="col">
+                {{settings.time}} 
+            </div>
+        </div>
+
+    
+    
+        <div class="list">
+            <div class="item" ng-repeat="(key, value) in beacons">
+                <div class="row">
+                    <div class="col truncate">
+                        {{value.uuid}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        major: {{value.major}}
+                    </div>
+                    <div class="col">
+                        minor: {{value.minor}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        {{value.proximity}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        rssi: {{value.rssi}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        tx: {{value.tx}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        accuracy: {{value.accuracy}}
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+

@@ -1,1 +1,21 @@
 /* Empty. Add your own CSS if you like */
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.centertext {
+	height: 180px;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.centertext .item-text-wrap {
+    background: red;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
