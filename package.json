@@ -11,7 +11,7 @@
     "cordova-ios": "^4.4.0",
     "cordova-plugin-compat": "^1.2.0",
     "cordova-plugin-console": "^1.0.5",
-    "cordova-plugin-device": "^1.1.4",
+    "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-device-orientation": "^1.0.7",
     "cordova-plugin-estimote": "git+https://github.com/evothings/phonegap-estimotebeacons.git",
     "cordova-plugin-facebook4": "^1.7.4",
