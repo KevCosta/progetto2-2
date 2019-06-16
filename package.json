@@ -14,7 +14,7 @@
     "cordova-plugin-device": "^1.1.4",
     "cordova-plugin-device-orientation": "^1.0.7",
     "cordova-plugin-estimote": "git+https://github.com/evothings/phonegap-estimotebeacons.git",
-    "cordova-plugin-facebook4": "^1.7.4",
+    "cordova-plugin-facebook4": "^4.2.1",
     "cordova-plugin-inappbrowser": "^1.7.1",
     "cordova-plugin-magnetometer": "git+https://github.com/sdesalas/cordova-plugin-magnetometer.git",
     "cordova-plugin-nativestorage": "^2.2.2",
