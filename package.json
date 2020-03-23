@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "An Ionic project",
   "dependencies": {
-    "@ionic-native/device-orientation": "^4.2.1",
+    "@ionic-native/device-orientation": "^5.23.0",
     "@ionic-native/estimote-beacons": "^3.12.1",
     "@ionic-native/facebook": "^3.10.3",
     "com.unarin.cordova.beacon": "git+https://github.com/petermetz/cordova-plugin-ibeacon.git",
