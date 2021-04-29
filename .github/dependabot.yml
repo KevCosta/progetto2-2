@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@ionic-native/device-orientation"
+    versions:
+    - 5.31.1
+    - 5.32.0
+  - dependency-name: cordova-plugin-inappbrowser
+    versions:
+    - 4.1.0
